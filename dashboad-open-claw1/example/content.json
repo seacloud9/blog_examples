@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "DEMO-001",
+      "status": "VALIDATED",
+      "channel": "social",
+      "text": "A small local draft becomes useful when its state is explicit.",
+      "destination": "demo-only"
+    }
+  ]
+}
