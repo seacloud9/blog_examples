@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-05T18:30:00Z",
+  "mode": "review-only",
+  "items": [
+    {
+      "id": "CONTENT-GAMING-DEMO-01",
+      "persona": "arcade",
+      "channel": "demo",
+      "status": "VALIDATED",
+      "text": "The archive is not a storefront until a human verifies the artifact.",
+      "targetAccount": "PixelArchivist",
+      "source": "fictional-gaming-fixture"
+    },
+    {
+      "id": "CONTENT-AUTO-DEMO-01",
+      "persona": "automotive",
+      "channel": "demo",
+      "status": "VALIDATED",
+      "text": "Today in our fictional garage: a guide to keeping service records somewhere other than the glove box avalanche.",
+      "targetAccount": "CheckEngineSal",
+      "source": "fictional-automotive-fixture"
+    },
+    {
+      "id": "CONTENT-AUTO-DEMO-02",
+      "persona": "automotive",
+      "channel": "demo",
+      "status": "DRAFT",
+      "text": "This draft is not eligible for routing until its claims are checked.",
+      "targetAccount": "CheckEngineSal",
+      "source": "fictional-automotive-fixture"
+    }
+  ]
+}

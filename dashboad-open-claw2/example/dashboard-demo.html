@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fictional agent command center</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f3f2ed; color: #24362e; font: 16px/1.5 system-ui, sans-serif; }
+    main { max-width: 1280px; padding: 48px 54px; margin: auto; }
+    .eyebrow { color: #516b5e; letter-spacing: .13em; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+    h1 { font-size: 42px; letter-spacing: -.045em; line-height: 1.15; margin: 12px 0; }
+    h2 { margin: 0; font-size: 21px; letter-spacing: -.02em; }
+    h3 { font-size: 18px; margin: 4px 0; }
+    p { margin: 8px 0; }
+    .muted { color: #66736b; }
+    .banner { margin: 26px 0; border: 1px solid #cec6af; background: #f5efdb; border-radius: 12px; padding: 14px 18px; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 22px; }
+    section { background: #fffefa; padding: 24px; border: 1px solid #dedfd5; border-radius: 18px; }
+    .section-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; gap: 12px; }
+    .badge { display: inline-block; padding: 5px 10px; border-radius: 20px; font-size: 12px; white-space: nowrap; background: #edf0e9; color: #4d6153; }
+    .pending { color: #795913; background: #f6edcd; }
+    .blocked { color: #923e31; background: #f8e6df; }
+    .draft { border-top: 1px solid #e7e7de; padding-top: 18px; margin-top: 18px; }
+    .row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .draft p { font-size: 15px; }
+    .meta { font-size: 12px; color: #718074; }
+    .timeline { list-style: none; margin: 0; padding: 0; }
+    .timeline li { display: grid; grid-template-columns: 50px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e7e7de; }
+    time { font-size: 13px; color: #6a796e; padding-top: 3px; }
+    .timeline p { font-size: 13px; color: #66736b; margin: 3px 0; }
+    .receipt { margin-top: 22px; padding: 17px; background: #f6f4ec; border-radius: 12px; }
+    .receipt p { font-size: 14px; }
+    footer { display: flex; justify-content: space-between; margin-top: 22px; font-size: 13px; color: #617365; }
+    @media (max-width: 800px) { main { padding: 24px; } .grid { grid-template-columns: 1fr; } h1 { font-size: 32px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">OpenClaw + local LLM · Teaching example</div>
+    <h1>Useful work. A clear place to review it.</h1>
+    <p class="muted">Two fictional specialists, one review queue, and receipts that tell the whole story.</p>
+    <div class="banner">Fictional demo · All records below are synthetic. No accounts are connected and no jobs are running.</div>
+    <div class="grid">
+      <section aria-labelledby="queue-title">
+        <div class="section-head"><h2 id="queue-title">Ready for human review</h2><span class="badge">2 pending drafts</span></div>
+        <div class="draft">
+          <div class="row"><h3>CheckEngineSal</h3><span class="badge pending">Pending</span></div>
+          <div class="meta">Automotive · Fictional destination</div>
+          <p>Today in our fictional garage: a guide to keeping service records somewhere other than the glove box avalanche.</p>
+          <p class="meta">Structure checked · Claims still need editorial review</p>
+        </div>
+        <div class="draft">
+          <div class="row"><h3>PixelArchivist</h3><span class="badge pending">Pending</span></div>
+          <div class="meta">Gaming · Fictional destination</div>
+          <p>The archive is not a storefront until a human verifies the artifact.</p>
+          <p class="meta">Structure checked · Claims still need editorial review</p>
+        </div>
+        <div class="receipt"><p>Approval belongs to the exact payload. Editing the text or destination requires a new review.</p></div>
+      </section>
+      <section aria-labelledby="schedule-title">
+        <div class="section-head"><h2 id="schedule-title">An illustrative night</h2><span class="badge">Proposed schedule</span></div>
+        <ol class="timeline">
+          <li><time>00:05</time><div>Check automotive sources<p>Validate and extract before requesting drafts.</p></div></li>
+          <li><time>01:15</time><div>Check motorcycle sources<p>Drafting waits for usable input, not just the clock.</p></div></li>
+          <li><time>04:00</time><div>Collect analytics<p>Report collection separately from dashboard refresh.</p></div></li>
+          <li><time>05:00</time><div>Catalog maintenance<p>Allow up to four hours in the proposed runner.</p></div></li>
+        </ol>
+        <div class="receipt">
+          <div class="row"><h3>Example analytics receipt</h3><span class="badge blocked">Collection failed</span></div>
+          <p>Dashboard refresh: complete<br>Traffic metrics: unavailable</p>
+          <p class="meta">A refreshed page is not proof of fresh provider data.</p>
+        </div>
+      </section>
+    </div>
+    <footer><span>Draft → checks → queue → human decision</span><span>Static demo · Nothing is published</span></footer>
+  </main>
+</body>
+</html>

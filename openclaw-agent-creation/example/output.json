@@ -1,0 +1,9 @@
+{
+  "persona": "automotive",
+  "destination": "CheckEngineSal",
+  "status": "DRAFT",
+  "sourceId": "demo-service-records",
+  "text": "Our fictional service booklet records the date, mileage, and work performed. Future you appreciates readable notes.",
+  "needsHumanReview": true,
+  "blockedReason": null
+}

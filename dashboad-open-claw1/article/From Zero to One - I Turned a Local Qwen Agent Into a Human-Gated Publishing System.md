@@ -16,7 +16,7 @@ This article is the story of that transition.
 
 > The useful unit of AI automation is not a clever generation. It is a controlled state transition.
 
-![The local command center brings drafts, agents, repository checks, and publishing state into one view.](./blog-assets/01-local-command-center.png)
+![The local command center brings drafts, agents, repository checks, and publishing state into one view.](https://github.com/seacloud9/blog_examples/blob/main/dashboad-open-claw1/article/blog-assets/01-local-command-center.png?raw=true) 
 
 *Figure 1 — The local command center. This article’s screenshots were captured from a synthetic local copy of the queue; no X credentials or live publishing actions were used.*
 
@@ -121,7 +121,7 @@ The interface exposes the things that matter during review:
 - deterministic validation results;
 - current approval state.
 
-![Validated ARCA/9 drafts display text, claims, evidence, routing, and approval state.](./blog-assets/02-content-queue.png)
+![Validated ARCA/9 drafts display text, claims, evidence, routing, and approval state.](https://github.com/seacloud9/blog_examples/blob/main/dashboad-open-claw1/article/blog-assets/02-content-queue.png?raw=true)
 
 *Figure 2 — The Content Queue makes agent output legible as records rather than chat messages.*
 
@@ -196,7 +196,7 @@ When the owner submits a decision, the server reloads the queue and source conte
 
 Only then can `PENDING` become `APPROVED`.
 
-![The Publish Queue presents one exact payload, its expiration, revision, evidence, hash, and decision controls.](./blog-assets/03-publish-review.png)
+![The Publish Queue presents one exact payload, its expiration, revision, evidence, hash, and decision controls.](https://github.com/seacloud9/blog_examples/blob/main/dashboad-open-claw1/article/blog-assets/03-publish-review.png?raw=true) 
 
 *Figure 3 — An approval is a decision about this exact payload, not a general permission to post something similar later.*
 
@@ -285,7 +285,7 @@ After an owner approves a post, the item moves into a “Ready for dispatcher”
 
 It still cannot leave the Mac.
 
-![An approved payload is ready for a future dispatcher, while the X broker remains visibly locked.](./blog-assets/04-approved-handoff.png)
+![An approved payload is ready for a future dispatcher, while the X broker remains visibly locked.](https://github.com/seacloud9/blog_examples/blob/main/dashboad-open-claw1/article/blog-assets/04-approved-handoff.png?raw=true) 
 
 *Figure 4 — Approval is recorded locally. The interface continues to state that the X broker is locked.*
 
@@ -331,8 +331,7 @@ The acceptance suite exercises:
 
 The browser tests use a synthetic password and copied queue files. Approval and rejection can therefore be clicked end to end without touching the live queue or X.
 
-![The exact-payload decision flow remains usable at phone width without horizontal page overflow.](./blog-assets/05-mobile-publish-queue.png)
-
+![The exact-payload decision flow remains usable at phone width without horizontal page overflow.](https://github.com/seacloud9/blog_examples/blob/main/dashboad-open-claw1/article/blog-assets/05-mobile-publish-queue.pngraw=true) 
 *Figure 5 — The review flow at 390 pixels wide.*
 
 One test deserves special emphasis: after local approval, the expected external-publication count remains zero.
